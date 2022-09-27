@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$theme1: #fefe00;
+
+body {
+   @apply bg-black text-white overflow-x-hidden;
+   font-family: "Montserrat", sans-serif;
+}
+
+nav {
+   @apply flex items-center justify-center py-4 fixed w-screen bg-black z-10;
+   div {
+      @apply flex flex-row text-sm uppercase font-bold mx-6;
+      img {
+         @apply flex mr-4 w-8 h-auto object-contain;
+      }
+      span {
+         @apply block text-xs font-light m-0;
+      }
+   }
+}
+
+header {
+   @apply w-screen h-screen overflow-x-hidden relative;
+
+   .container {
+      @apply z-[1] w-full h-full relative mx-auto flex items-center justify-center flex-col;
+
+      h1 {
+         @apply text-8xl text-center uppercase font-bold text-[#{$theme1}] m-6;
+      }
+
+      .to {
+         @apply flex flex-row items-center mb-4;
+         .arrow-box {
+            @apply bg-[#{$theme1}] text-black py-1 pl-5 pr-[2rem] font-bold text-2xl;
+            clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+         }
+         span {
+            @apply mx-4 text-2xl font-bold text-[#{$theme1}];
+         }
+      }
+   }
+
+   .scroll-down {
+      @apply absolute bottom-0 left-0 z-[2] w-full flex items-center border-b-8 border-[#{$theme1}];
+      div {
+         @apply bg-[#{$theme1}] text-black mx-auto relative flex flex-row px-20 py-2 text-lg font-bold cursor-pointer;
+         clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+      }
+   }
+
+   .bg {
+      @apply w-full h-full absolute top-0 left-0 z-0;
+      img {
+         @apply w-full h-full object-cover;
+      }
+   }
+}
+
+.rule {
+   @apply bg-[url('../img/rule-bg.png')] bg-cover bg-left-bottom py-20 relative flex items-center overflow-hidden;
+   .container {
+      @apply text-black mx-auto min-h-[350px] flex flex-col justify-center z-[1];
+      h1 {
+         @apply text-5xl font-bold flex flex-row items-center;
+         .arrow {
+            @apply w-4 h-10 bg-black relative transform -skew-x-[25deg];
+            content: "";
+         }
+      }
+
+      ul {
+         /* list-style-type: "+"; */
+         @apply list-['+'] p-4 mb-20;
+         li {
+            @apply font-medium text-xl px-2;
+         }
+      }
+
+      tr {
+         @apply border border-black;
+         td {
+            @apply px-4;
+         }
+      }
+
+      .separator {
+         @apply w-full h-1 bg-black relative;
+         &::before {
+            @apply w-40 h-4 bg-black absolute bottom-0 left-0;
+            content: "";
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+         }
+      }
+   }
+   .mascot {
+      @apply absolute h-[640px] right-0 bottom-0 z-[1];
+      img {
+         @apply w-full h-full object-contain;
+      }
+   }
+}
+
+.feature {
+   .container {
+      @apply grid grid-cols-[1fr,2fr] gap-x-[4rem] py-40 mx-auto;
+     
+      .frame {
+         @apply aspect-square overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer;
+         clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 85%);
+         transition: ease .4s;
+         img {
+            @apply flex w-full h-full object-cover -z-[1];
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 85%);
+         }
+         &.active, &:hover {
+            @apply bg-[#{$theme1}] filter-none;
+         }
+      }
+
+      .content {
+         h2 {
+            @apply text-3xl font-bold flex flex-row items-center text-[#{$theme1}];
+            .arrow {
+               @apply w-4 h-10 bg-[#{$theme1}] relative transform -skew-x-[25deg];
+               content: "";
+            }
+         }
+
+         table, th, td {
+            @apply border border-slate-500 border-collapse;
+         }
+
+         thead {
+            @apply font-bold;
+         }
+
+         tr {
+            td:not(:first-child) {
+               @apply text-center;
+            }
+         }
+
+         td { 
+            @apply px-8 py-2;
+         }
+      }
+   }
+}
+
+.reward {
+   @apply bg-[#{$theme1}] text-black p-20 relative;
+   .container {
+      @apply mx-auto min-h-[640px] flex flex-col items-center justify-center;
+   }
+
+   .mask {
+      @apply absolute left-0 w-full;
+   }
+
+   .blackbar {
+         @apply bg-black -z-10 w-full h-[200px];
+         content: '';
+   }
+   .separator {
+      @apply bg-[url('../img/separator.png')] w-full h-14 bg-contain left-0 flex items-center justify-center z-10;
+      content: ''; animation: cross linear .4s infinite;
+
+      @keyframes cross {
+         from {
+            background-position: 0 0;
+         }
+
+         to {
+            background-position: 61px 0;
+         }
+      }
+   }
+}
