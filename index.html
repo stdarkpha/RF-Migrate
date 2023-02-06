@@ -1,190 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RF Remastered Migrasi Server</title>
-    <link rel="stylesheet" href="dist/style.css">
-</head>
-<body>
-    <nav>
-        <div>
-            <img src="img/home.png" alt="img icon">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>RF Remastered Migrasi Server</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+   </head>
+   <body class="bg-black text-white">
+      <nav class="flex items-center justify-center py-4 fixed w-screen bg-black z-10">
+         <div class="flex flex-row text-sm uppercase font-bold mx-6">
+            <img class="flex mr-4 w-8 h-auto object-contain" src="img/home.png" alt="img icon" />
             <p>
-                <span>Go To</span>
-                Website
+               <span class="block text-xs font-light m-0">Go To</span>
+               Website
             </p>
-        </div>
-        <div>
-            <img src="img/regis.png" alt="img register">
+         </div>
+         <div class="flex flex-row text-sm uppercase font-bold mx-6">
+            <img class="flex mr-4 w-8 h-auto object-contain" src="img/regis.png" alt="img register" />
             <p>
-                <span>Baru</span>
-                Daftar
+               <span class="block text-xs font-light m-0">Baru</span>
+               Daftar
             </p>
-        </div>
-        <div>
-            <img src="img/down.png" alt="img down">
+         </div>
+         <div class="flex flex-row text-sm uppercase font-bold mx-6">
+            <img class="flex mr-4 w-8 h-auto object-contain" src="img/down.png" alt="img down" />
             <p>
-                Download
-                <span>Installer</span>
+               Download
+               <span class="block text-xs font-light m-0">Installer</span>
             </p>
-        </div>
-    </nav>
+         </div>
+      </nav>
 
-    <header>
-        <div class="container">
-            <img class="w-[250px]" src="img/rf-logo.png" alt="rf-logo">
+      <header class="w-100% h-screen min-h-[720px] relative">
+         <div class="container z-[1] w-full h-full relative mx-auto flex items-center justify-center flex-col">
+            <img class="w-[250px]" src="img/rf-logo.png" alt="rf-logo" />
 
-            <h1>Migrasi Server</h1>
-            <div class="to">
-                <div class="arrow-box">SKYNEX</div>
-                <span>KE</span>
-                <div class="arrow-box">COSMIC</div>
+            <h1 class="text-8xl text-center uppercase font-bold text-theme">Migrasi Server</h1>
+
+            <div class="flex flex-row items-center my-8">
+               <div class="bg-theme text-black py-1 pl-5 pr-[2rem] font-bold text-2xl clip-to">SKYNEX</div>
+               <span class="mx-4 text-2xl font-bold text-theme">KE</span>
+               <div class="bg-theme text-black py-1 pl-5 pr-[2rem] font-bold text-2xl clip-to">COSMIC</div>
             </div>
 
-            <img class="w-[250px]" src="img/Date.png" alt="date">
-        </div>
-        <div class="scroll-down">
-            <div>
-                <img class="mr-3" src="img/scroll.png" alt="scroll down">
-                Scroll Down
+            <div class="relative p-5 mt-8">
+               <div class="border-t-8 border-r-8 border-theme w-[25px] aspect-square absolute top-0 right-0"></div>
+               <div class="border-t-8 border-l-8 border-theme w-[25px] aspect-square absolute top-0 left-0"></div>
+               <div class="border-b-8 border-r-8 border-theme w-[25px] aspect-square absolute bottom-0 right-0"></div>
+               <div class="border-b-8 border-l-8 border-theme w-[25px] aspect-square absolute bottom-0 left-0"></div>
+
+               <time class="text-3xl font-bold text-white mx-4">05 - 10 - 2022</time>
             </div>
-        </div>
-        <div class="bg">
-            <img src="img/bg-hero.png" alt="background-hero">
-        </div>
-    </header>
-    <section class="rule">
-        <div class="container">
-            <h1>Ketentuan Migrasi
-                <div class="arrow ml-10"></div>
-                <div class="arrow ml-5"></div>
+         </div>
+         <div class="absolute bottom-0 left-0 z-[2] w-full flex items-center border-b-8 border-theme">
+            <div class="bg-theme clip-scroll text-black mx-auto relative flex flex-row px-20 py-2 text-lg font-semibold cursor-pointer">
+               <img class="mr-3" src="img/scroll.png" alt="scroll down" />
+               Scroll Down
+            </div>
+         </div>
+         <div class="w-full h-full absolute top-0 left-0 z-0">
+            <img class="w-full h-full object-cover" src="img/bg-hero.png" alt="background-hero" />
+         </div>
+      </header>
+
+      <section class="py-20 relative">
+         <div class="container relative text-black mx-auto min-h-[350px] flex flex-col justify-center z-[2]">
+            <h1 class="text-5xl font-bold flex flex-row items-center">
+               Ketentuan Migrasi
+               <div class="w-4 h-10 bg-black relative transform -skew-x-[25deg] content-[''] arrow ml-10"></div>
+               <div class="w-4 h-10 bg-black relative transform -skew-x-[25deg] content-[''] arrow ml-5"></div>
             </h1>
-            <ul class="my-5">
-                <li>PVP Point dan CPT Point semua karakter direset ke 0
-                </li>
-                <li>Karakter hasil merger yang ada di Skynex akan dihapus</li>
-                <li>Archon akan mengikuti server Cosmic</li>
-                <li>Semua karakter minimal level 50 per tanggal 02 Oktober 2022 pukul 23:59</li>
-                <li>WIB akan mendapatkan Potion EXP sesuai kategori
-                    <table class="mt-4">
-                        <tr>
-                            <td>Level 50 – 54</td>
-                            <td>:</td>
-                            <td>50 buah Potion EXP 7%</td>
-                        </tr>
-                        <tr>
-                            <td>Level 50 – 54</td>
-                            <td>:</td>
-                            <td>50 buah Potion EXP 7%</td>
-                        </tr>
-                        <tr>
-                            <td>Level 50 – 54</td>
-                            <td>:</td>
-                            <td>50 buah Potion EXP 7%</td>
-                        </tr>
-                        <tr>
-                            <td>Level 50 – 54</td>
-                            <td>:</td>
-                            <td>50 buah Potion EXP 7%</td>
-                        </tr>
-                        <tr>
-                            <td>Level 50 – 54</td>
-                            <td>:</td>
-                            <td>50 buah Potion EXP 7%</td>
-                        </tr>
-                        <tr>
-                            <td>Level 50 – 54</td>
-                            <td>:</td>
-                            <td>50 buah Potion EXP 7%</td>
-                        </tr>
-                    </table>
-                </li>
+            <ul class="my-5 list-['+'] p-4 mb-20 font-medium text-xl">
+               <li class="px-4">PVP Point dan CPT Point semua karakter direset ke 0</li>
+               <li class="px-4">Karakter hasil merger yang ada di Skynex akan dihapus</li>
+               <li class="px-4">Archon akan mengikuti server Cosmic</li>
+               <li class="px-4">Semua karakter minimal level 50 per tanggal 02 Oktober 2022 pukul 23:59</li>
+               <li class="px-4">
+                  WIB akan mendapatkan Potion EXP sesuai kategori
+                  <table class="mt-8">
+                     <tr class="border border-black px-4 block py-2">
+                        <td>Level 50 – 54</td>
+                        <td class="px-4">:</td>
+                        <td>50 buah Potion EXP 7%</td>
+                     </tr>
+                     <tr class="border border-black px-4 block py-2">
+                        <td>Level 50 – 54</td>
+                        <td class="px-4">:</td>
+                        <td>50 buah Potion EXP 7%</td>
+                     </tr>
+                     <tr class="border border-black px-4 block py-2">
+                        <td>Level 50 – 54</td>
+                        <td class="px-4">:</td>
+                        <td>50 buah Potion EXP 7%</td>
+                     </tr>
+                     <tr class="border border-black px-4 block py-2">
+                        <td>Level 50 – 54</td>
+                        <td class="px-4">:</td>
+                        <td>50 buah Potion EXP 7%</td>
+                     </tr>
+                     <tr class="border border-black px-4 block py-2">
+                        <td>Level 50 – 54</td>
+                        <td class="px-4">:</td>
+                        <td>50 buah Potion EXP 7%</td>
+                     </tr>
+                     <tr class="border border-black px-4 block py-2">
+                        <td>Level 50 – 54</td>
+                        <td class="px-4">:</td>
+                        <td>50 buah Potion EXP 7%</td>
+                     </tr>
+                  </table>
+               </li>
             </ul>
-            
-            <div class="separator"></div>
-        </div>
-        <div class="mascot">
-            <img src="img/chara-rule.png" alt="chara rule">
-        </div>
-    </section>
 
-    <section class="feature relative z-[1]">
-        <div class="container">
-            <div class="grid grid-cols-2 gap-4">
-                <div class="frame -mt-8 active">
-                    <img src="img/Rate.png" alt="">
-                </div>
-                <div class="frame">
-                    <img src="img/Rate.png" alt="">
-                </div>
-                <div class="frame -mt-8">
-                    <img src="img/Rate.png" alt="">
-                </div>
-                <div class="frame">
-                    <img src="img/Rate.png" alt="">
-                </div>
+            <!-- Seperator -->
+            <div class="w-full h-1 bg-black relative">
+               <div class="w-40 h-4 bg-black absolute bottom-0 left-0 content-[''] clip-separate"></div>
             </div>
-            <div class="content">
-                <h2>
-                    Server Rate 
-                    <div class="arrow ml-10"></div>
-                    <div class="arrow ml-5"></div>
-                </h2>
+         </div>
 
-                <table class="w-full mt-10">
-                    <thead>
-                        <td>RATE</td>
-                        <td>Normal</td>
-                        <td>Premium</td>
-                    </thead>
-                    <tr>
-                        <td>Exp Rate</td>
-                        <td>9.000%</td>
-                        <td>17.000%</td>
-                    </tr>
-                    <tr>
-                        <td>Exp Animus Rate</td>
-                        <td>9.000%</td>
-                        <td>17.000%</td>
-                    </tr>
-                    <tr>
-                        <td>Exp Rate</td>
-                        <td>9.000%</td>
-                        <td>17.000%</td>
-                    </tr>
-                    <tr>
-                        <td>Exp Rate</td>
-                        <td>9.000%</td>
-                        <td>17.000%</td>
-                    </tr>
-                    <tr>
-                        <td>Exp Rate</td>
-                        <td>9.000%</td>
-                        <td>17.000%</td>
-                    </tr>
-                </table>
+         <div class="absolute h-[640px] right-0 bottom-0 z-[1]">
+            <img class="w-full h-full object-contain" src="img/chara-rule.png" alt="chara rule" />
+         </div>
+
+         <div class="w-full h-full absolute top-0 left-0 z-0">
+            <img class="w-full h-full object-cover" src="img/rule-bg.png" alt="rule-hero" />
+         </div>
+      </section>
+
+      <section class="relative">
+         <div class="container py-20 mx-auto flex flex-col items-center">
+            <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-20 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-theme">Server Feature</h1>
+
+            <div class="grid grid-cols-[1fr,2fr] gap-x-[4rem]">
+               <div class="grid grid-cols-2 gap-4">
+                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 hover:filter-none hover:bg-theme">
+                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
+                  </div>
+                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 mt-8 hover:filter-none hover:bg-theme">
+                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
+                  </div>
+                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 -mt-8 hover:filter-none hover:bg-theme">
+                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
+                  </div>
+                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 hover:filter-none hover:bg-theme">
+                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
+                  </div>
+               </div>
+               <div class="content">
+                  <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                     Server Rate
+                     <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
+                     <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
+                  </h2>
+
+                  <table class="mt-10 w-full">
+                     <tr class="font-bold">
+                        <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Premium</td>
+                     </tr>
+                     <tr>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                     </tr>
+                     <tr>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                     </tr>
+                     <tr>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                     </tr>
+                     <tr>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                     </tr>
+                  </table>
+               </div>
             </div>
-        </div>
-    </section>
+         </div>
+      </section>
 
-    <section class="reward">
-        <div class="mask -top-[180px] scale-105 -rotate-2">
-            <div class="blackbar"></div>
-            <div class="separator"></div>
-        </div>
-        <div class="container">
-            <h1>CPT Reward</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptate omnis cumque voluptas hic accusamus mollitia unde voluptatibus sed quaerat aliquam veritatis obcaecati atque suscipit expedita, doloremque sapiente nam exercitationem?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptate omnis cumque voluptas hic accusamus mollitia unde voluptatibus sed quaerat aliquam veritatis obcaecati atque suscipit expedita, doloremque sapiente nam exercitationem?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptate omnis cumque voluptas hic accusamus mollitia unde voluptatibus sed quaerat aliquam veritatis obcaecati atque suscipit expedita, doloremque sapiente nam exercitationem?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptate omnis cumque voluptas hic accusamus mollitia unde voluptatibus sed quaerat aliquam veritatis obcaecati atque suscipit expedita, doloremque sapiente nam exercitationem?</p>
-        </div>
-        <div class="mask -bottom-[180px] scale-x-105 rotate-[182deg]">
-            <div class="blackbar"></div>
-            <div class="separator"></div>
-        </div>
-    </section>
-</body>
+      <section class="bg-yellow-400 text-black p-20 relative overflow-hidden">
+         <div class="absolute left-0 w-full -top-[150px] scale-105 -rotate-3">
+            <div class="bg-black -z-10 w-full h-[200px] content-['']"></div>
+            <div class="content-[''] bg-[url('../img/separator.png')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
+         </div>
+
+         <div class="container relative z-[5] mx-auto min-h-[480px] flex items-center justify-end">
+            <div class="flex flex-col items-center">
+               <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-8 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-black">CPT Reward</h1>
+               <p class="my-4">Reset Point CPT tiap akhir bulan dan akan mendapatkan Reward sesuai dengan kategori point CPT</p>
+               <div class="relative px-4 pt-4 pb-12 block z-[1]">
+                  <table>
+                     <tr>
+                        <td class="pr-8">50.000 - 79.999</td>
+                        <td>: 5 set Tier 4</td>
+                     </tr>
+                     <tr>
+                        <td class="pr-8">80.000 - 149.999</td>
+                        <td>: 5 set Tier 4, 10 talic Ignorant dan Favor</td>
+                     </tr>
+                     <tr>
+                        <td class="pr-8">150.000 - ∞</td>
+                        <td>: 10 set Tier 4, 20 talic Ignorant dan Favor, 3 buah Caliana Necklace</td>
+                     </tr>
+                  </table>
+                  <div class="clip-reward overflow-hidden bg-black p-[1px] w-full h-full absolute top-0 left-0 -z-[1]">
+                     <div class="clip-reward overflow-hidden bg-yellow-300 w-full h-full"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="absolute h-[640px] left-0 bottom-0 z-[1] animate-floating">
+            <img class="w-full h-full object-contain" src="img/chara-reward.png" alt="chara Reward" />
+         </div>
+
+         <div class="w-full h-full absolute top-0 left-0 z-0 mix-blend-soft-light opacity-50">
+            <img class="w-full h-full object-cover" src="img/texture-grunge.jpg" alt="texture-grunge" />
+         </div>
+
+         <div class="absolute left-0 w-full -bottom-[150px] scale-x-105 rotate-[183deg] z-[2]">
+            <div class="bg-black -z-10 w-full h-[200px] content-['']"></div>
+            <div class="content-[''] bg-[url('../img/separator.png')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
+         </div>
+      </section>
+   </body>
 </html>
