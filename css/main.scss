@@ -21,3 +21,15 @@
 .clip-reward {
    clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 85%, 0 0);
 }
+
+.clip-register {
+   clip-path: polygon(80% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
+}
+
+.stroke-text {
+   -webkit-text-stroke: 1px #fefe00;
+}
+
+.path {
+   stroke-dasharray: 500;
+}

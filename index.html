@@ -5,36 +5,58 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>RF Remastered Migrasi Server</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
       <link rel="stylesheet" href="css/style.css" />
       <!-- <script src="https://cdn.tailwindcss.com"></script> -->
    </head>
    <body class="bg-black text-white">
       <nav class="flex items-center justify-center py-4 fixed w-screen bg-black z-10">
-         <div class="flex flex-row text-sm uppercase font-bold mx-6">
-            <img class="flex mr-4 w-8 h-auto object-contain" src="img/home.png" alt="img icon" />
-            <p>
-               <span class="block text-xs font-light m-0">Go To</span>
-               Website
+         <div class="flex flex-row text-sm uppercase font-bold mx-6 cursor-pointer group">
+            <svg class="w-auto h-8 mr-4 transition duration-300 fill-white group-hover:opacity-50 group-hover:scale-90" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M8.9474 11.6179H2.68314C1.20092 11.6179 0 10.4115 0 8.92931V4.92083C0 4.18512 0.454402 3.26008 1.03863 2.80568L3.95438 0.53367C4.83073 -0.147931 6.23181 -0.180388 7.14061 0.457937L10.4837 2.80027C11.1275 3.24927 11.6305 4.21217 11.6305 4.99657V8.93472C11.6305 10.4115 10.4296 11.6179 8.9474 11.6179ZM4.45206 1.172L1.53631 3.44401C1.15223 3.74694 0.811433 4.43396 0.811433 4.92083V8.92931C0.811433 9.96254 1.64991 10.8064 2.68314 10.8064H8.9474C9.98063 10.8064 10.8191 9.96795 10.8191 8.93472V4.99657C10.8191 4.47723 10.4458 3.75776 10.0185 3.46565L6.67539 1.12331C6.0587 0.690548 5.0417 0.712186 4.45206 1.172Z"
+               />
+               <path d="M5.81526 9.45404C5.59347 9.45404 5.40955 9.27012 5.40955 9.04833V7.42546C5.40955 7.20367 5.59347 7.01974 5.81526 7.01974C6.03705 7.01974 6.22098 7.20367 6.22098 7.42546V9.04833C6.22098 9.27012 6.03705 9.45404 5.81526 9.45404Z" />
+            </svg>
+
+            <p class="w-[60px]">
+               <span class="block origin-left text-xs font-light m-0 group-hover:font-bold group-hover:scale-125 transition group-hover:text-theme duration-300">Go To</span>
+               <span class="group-hover:scale-50 origin-left group-hover:font-light duration-300 transition-all">Website</span>
             </p>
          </div>
-         <div class="flex flex-row text-sm uppercase font-bold mx-6">
-            <img class="flex mr-4 w-8 h-auto object-contain" src="img/regis.png" alt="img register" />
-            <p>
-               <span class="block text-xs font-light m-0">Baru</span>
-               Daftar
+         <div class="flex flex-row text-sm uppercase font-bold mx-6 cursor-pointer group">
+            <svg class="w-auto h-8 mr-4 transition duration-500 group-hover:opacity-50 group-hover:scale-90 stroke-white" viewBox="0 0 14 19" xmlns="http://www.w3.org/2000/svg">
+               <path d="M7.10085 8.73627C7.01363 8.72755 6.90897 8.72755 6.81303 8.73627C4.73721 8.6665 3.08878 6.96574 3.08878 4.8725C3.08006 2.73565 4.8157 1 6.95258 1C9.08943 1 10.8251 2.73565 10.8251 4.8725C10.8251 6.96574 9.16793 8.6665 7.10085 8.73627Z" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
+               <path d="M12.6306 16.2632H9.14185" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
+               <path d="M10.8862 18.0076V14.5189" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
+               <path d="M6.95262 18.278C5.36525 18.278 3.78663 17.8768 2.58301 17.0744C0.472329 15.6615 0.472329 13.3589 2.58301 11.9547C4.98152 10.3499 8.91503 10.3499 11.3135 11.9547" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <p class="w-[60px]">
+               <span class="group-hover:scale-50 origin-left group-hover:font-light duration-300 transition-all">Daftar</span>
+               <span class="block origin-left text-xs font-light m-0 group-hover:font-bold group-hover:scale-125 transition group-hover:text-theme duration-300">Baru</span>
             </p>
          </div>
-         <div class="flex flex-row text-sm uppercase font-bold mx-6">
-            <img class="flex mr-4 w-8 h-auto object-contain" src="img/down.png" alt="img down" />
-            <p>
-               Download
-               <span class="block text-xs font-light m-0">Installer</span>
+         <div class="flex flex-row text-sm uppercase font-bold mx-6 cursor-pointer group">
+            <svg class="w-auto h-8 mr-4 transition duration-300 fill-white group-hover:opacity-50 group-hover:scale-90" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg">
+               <path d="M4.22749 9.91406C4.1734 9.91406 4.12471 9.90324 4.07062 9.8816C3.91915 9.8221 3.82178 9.67063 3.82178 9.50834V6.26261C3.82178 6.04082 4.0057 5.8569 4.22749 5.8569C4.44929 5.8569 4.63321 6.04082 4.63321 6.26261V8.52921L5.0227 8.13973C5.17958 7.98285 5.43923 7.98285 5.59611 8.13973C5.75299 8.2966 5.75299 8.55626 5.59611 8.71314L4.5142 9.79505C4.43847 9.87078 4.33028 9.91406 4.22749 9.91406Z" />
+               <path d="M4.22712 9.91401C4.12434 9.91401 4.02156 9.87614 3.94041 9.795L2.8585 8.71309C2.70163 8.55621 2.70163 8.29655 2.8585 8.13968C3.01538 7.9828 3.27504 7.9828 3.43192 8.13968L4.51383 9.22159C4.6707 9.37846 4.6707 9.63812 4.51383 9.795C4.43268 9.87614 4.3299 9.91401 4.22712 9.91401Z" />
+               <path
+                  d="M7.47317 12.6188H4.22744C1.29005 12.6188 0.0350342 11.3638 0.0350342 8.42643V5.1807C0.0350342 2.24331 1.29005 0.988297 4.22744 0.988297H6.93221C7.15401 0.988297 7.33793 1.17222 7.33793 1.39401C7.33793 1.6158 7.15401 1.79973 6.93221 1.79973H4.22744C1.73363 1.79973 0.846467 2.6869 0.846467 5.1807V8.42643C0.846467 10.9202 1.73363 11.8074 4.22744 11.8074H7.47317C9.96697 11.8074 10.8541 10.9202 10.8541 8.42643V5.72166C10.8541 5.49986 11.0381 5.31594 11.2599 5.31594C11.4816 5.31594 11.6656 5.49986 11.6656 5.72166V8.42643C11.6656 11.3638 10.4106 12.6188 7.47317 12.6188Z"
+               />
+               <path d="M11.2598 6.12737H9.09603C7.24596 6.12737 6.52649 5.4079 6.52649 3.55783V1.39401C6.52649 1.23172 6.62386 1.08025 6.77533 1.02075C6.9268 0.955834 7.0999 0.993701 7.21891 1.1073L11.5466 5.43494C11.6602 5.54854 11.698 5.72707 11.6331 5.87853C11.5682 6.03 11.4221 6.12737 11.2598 6.12737ZM7.33792 2.37314V3.55783C7.33792 4.95349 7.70036 5.31593 9.09603 5.31593H10.2807L7.33792 2.37314Z" />
+            </svg>
+
+            <p class="w-[60px]">
+               <span class="block origin-left text-xs font-light m-0 group-hover:font-bold group-hover:scale-125 transition group-hover:text-theme duration-300">Download</span>
+               <span class="group-hover:scale-50 origin-left group-hover:font-light duration-300 transition-all">Installer</span>
             </p>
          </div>
       </nav>
 
       <header class="w-100% h-screen min-h-[720px] relative">
-         <div class="container z-[1] w-full h-full relative mx-auto flex items-center justify-center flex-col">
+         <div class="z-[1] w-full h-full relative mx-auto flex items-center justify-center flex-col">
             <img class="w-[250px]" src="img/rf-logo.png" alt="rf-logo" />
 
             <h1 class="text-8xl text-center uppercase font-bold text-theme">Migrasi Server</h1>
@@ -46,22 +68,33 @@
             </div>
 
             <div class="relative p-5 mt-8">
-               <div class="border-t-8 border-r-8 border-theme w-[25px] aspect-square absolute top-0 right-0"></div>
-               <div class="border-t-8 border-l-8 border-theme w-[25px] aspect-square absolute top-0 left-0"></div>
-               <div class="border-b-8 border-r-8 border-theme w-[25px] aspect-square absolute bottom-0 right-0"></div>
-               <div class="border-b-8 border-l-8 border-theme w-[25px] aspect-square absolute bottom-0 left-0"></div>
+               <div class="w-full h-full absolute animate-scale top-0 left-0">
+                  <div class="border-t-8 border-r-8 border-theme w-[25px] aspect-square absolute top-0 right-0"></div>
+                  <div class="border-t-8 border-l-8 border-theme w-[25px] aspect-square absolute top-0 left-0"></div>
+                  <div class="border-b-8 border-r-8 border-theme w-[25px] aspect-square absolute bottom-0 right-0"></div>
+                  <div class="border-b-8 border-l-8 border-theme w-[25px] aspect-square absolute bottom-0 left-0"></div>
+               </div>
 
                <time class="text-3xl font-bold text-white mx-4">05 - 10 - 2022</time>
             </div>
+            <div class="w-full h-full absolute top-0 left-0 -z-[1]" id="particles-hero"></div>
          </div>
-         <div class="absolute bottom-0 left-0 z-[2] w-full flex items-center border-b-8 border-theme">
-            <div class="bg-theme clip-scroll text-black mx-auto relative flex flex-row px-20 py-2 text-lg font-semibold cursor-pointer">
-               <img class="mr-3" src="img/scroll.png" alt="scroll down" />
+
+         <div class="absolute bottom-0 left-0 z-[2] w-full flex flex-col items-center group">
+            <div class="bg-theme transition-all group-hover:bg-black group-hover:text-white clip-scroll text-black mx-auto relative flex flex-row px-20 py-2 text-lg font-semibold cursor-pointer">
+               <svg class="w-auto h-8 mr-3 stroke-black group-hover:stroke-white transition-all" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:animate-dash path" d="M1 7.39098V8.55985C1 11.4675 2.16305 12.6305 5.07069 12.6305H8.55985C11.4675 12.6305 12.6305 11.4675 12.6305 8.55985V5.07069C12.6305 2.16305 11.4675 1 8.55985 1H5.07069C2.16305 1 1 2.16305 1 5.07069" stroke-width="0.87229" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="group-hover:animate-dash path" d="M4.76294 6.02433L6.81573 8.07131L8.86852 6.02433" stroke-width="0.87229" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+
                Scroll Down
+            </div>
+            <div class="w-full h-2 relative bg-theme content-[''] -mt-[1px] flex items-center justify-center">
+               <div class="w-0 rounded-full opacity-75 group-hover:opacity-100 group-hover:w-full duration-500 transition-all h-full bg-black content-[]"></div>
             </div>
          </div>
          <div class="w-full h-full absolute top-0 left-0 z-0">
-            <img class="w-full h-full object-cover" src="img/bg-hero.png" alt="background-hero" />
+            <img class="w-full h-full object-cover" src="img/bg-hero.jpg" alt="background-hero" />
          </div>
       </header>
 
@@ -125,69 +158,192 @@
          </div>
 
          <div class="w-full h-full absolute top-0 left-0 z-0">
-            <img class="w-full h-full object-cover" src="img/rule-bg.png" alt="rule-hero" />
+            <img class="w-full h-full object-cover" src="img/rule-bg.jpg" alt="rule-hero" />
          </div>
       </section>
 
-      <section class="relative">
+      <section class="relative z-[1]">
          <div class="container py-20 mx-auto flex flex-col items-center">
             <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-20 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-theme">Server Feature</h1>
 
-            <div class="grid grid-cols-[1fr,2fr] gap-x-[4rem]">
-               <div class="grid grid-cols-2 gap-4">
-                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 hover:filter-none hover:bg-theme">
-                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
-                  </div>
-                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 mt-8 hover:filter-none hover:bg-theme">
-                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
-                  </div>
-                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 -mt-8 hover:filter-none hover:bg-theme">
-                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
-                  </div>
-                  <div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 hover:filter-none hover:bg-theme">
-                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/Rate.png" alt="thumbnail feature" />
-                  </div>
-               </div>
-               <div class="content">
-                  <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
-                     Server Rate
-                     <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
-                     <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
-                  </h2>
+            <div class="grid grid-cols-[1fr,2fr] gap-x-[4rem] backdrop-blur-sm backdrop-brightness-50 px-6">
+               <!-- Start Pagination -->
+               <div class="pagination grid grid-cols-2 gap-4"></div>
+               <!-- End Pagination -->
+               <div class="min-w-0">
+                  <div class="swiper feature-content">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                              Server Rate2
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
+                           </h2>
 
-                  <table class="mt-10 w-full">
-                     <tr class="font-bold">
-                        <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Premium</td>
-                     </tr>
-                     <tr>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
-                     </tr>
-                     <tr>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
-                     </tr>
-                     <tr>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
-                     </tr>
-                     <tr>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
-                        <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
-                     </tr>
-                  </table>
+                           <table class="mt-10 w-full">
+                              <tr class="font-bold">
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Premium</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <div class="swiper-slide">
+                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                              Server Rate
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
+                           </h2>
+
+                           <table class="mt-10 w-full">
+                              <tr class="font-bold">
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Premium</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <div class="swiper-slide">
+                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                              Server Rate
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
+                           </h2>
+
+                           <table class="mt-10 w-full">
+                              <tr class="font-bold">
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Premium</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <div class="swiper-slide">
+                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                              Server Rate
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
+                              <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
+                           </h2>
+
+                           <table class="mt-10 w-full">
+                              <tr class="font-bold">
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Premium</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                              <tr>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">Exp Rate</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">9.000%</td>
+                                 <td class="border border-collapse border-slate-500 px-4 py-2">17.000%</td>
+                              </tr>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
+
+         <div class="w-full h-full top-0 left-0 overflow-hidden absolute -z-[1] opacity-50">
+            <svg class="absolute -top-[2rem] left-0 w-full" viewBox="0 0 600 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0_8_38)">
+                  <path class="path animate-dash" d="M600 67.5H214.845L184.742 42.2H0" stroke="white" stroke-miterlimit="10" />
+                  <path class="path animate-dash" d="M600 54.9H364.536L336.082 78.9H172.887L147.113 57.2H85.7732" stroke="white" stroke-miterlimit="10" />
+                  <path class="path animate-dash" d="M279.588 32.9H399.072L437.835 0.299988" stroke="white" stroke-miterlimit="10" />
+               </g>
+               <defs>
+                  <clipPath id="clip0_8_38">
+                     <rect width="600" height="90" fill="white" />
+                  </clipPath>
+               </defs>
+            </svg>
+         </div>
+         <div class="w-full top-0 -bottom-[1rem] left-0 overflow-hidden absolute -z-[1] opacity-50">
+            <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 582 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path class="path animate-dash" d="M552.5 81H442.9L408.8 47H157.7L116.3 5.70001H0" stroke="white" stroke-miterlimit="10" />
+               <path class="path animate-dash" d="M357.5 66H211.8L168.8 23.1H0" stroke="white" stroke-miterlimit="10" />
+               <path class="path animate-dash" d="M492.7 23.1L459.3 56.4H386.3L365.2 35.4H220" stroke="white" stroke-miterlimit="10" />
+               <path class="path animate-dash" d="M378 76.5H80.3L60 56.3H0" stroke="white" stroke-miterlimit="10" />
+            </svg>
+         </div>
       </section>
 
-      <section class="bg-yellow-400 text-black p-20 relative overflow-hidden">
+      <section class="bg-[#f4d800] z-[1] text-black p-20 relative overflow-hidden">
          <div class="absolute left-0 w-full -top-[150px] scale-105 -rotate-3">
             <div class="bg-black -z-10 w-full h-[200px] content-['']"></div>
             <div class="content-[''] bg-[url('../img/separator.png')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
@@ -213,17 +369,17 @@
                      </tr>
                   </table>
                   <div class="clip-reward overflow-hidden bg-black p-[1px] w-full h-full absolute top-0 left-0 -z-[1]">
-                     <div class="clip-reward overflow-hidden bg-yellow-300 w-full h-full"></div>
+                     <div class="clip-reward overflow-hidden bg-yellow-400 w-full h-full"></div>
                   </div>
                </div>
             </div>
          </div>
 
          <div class="absolute h-[640px] left-0 bottom-0 z-[1] animate-floating">
-            <img class="w-full h-full object-contain" src="img/chara-reward.png" alt="chara Reward" />
+            <img class="w-full h-full object-contain animate-shadow" src="img/chara-reward.png" alt="chara Reward" />
          </div>
 
-         <div class="w-full h-full absolute top-0 left-0 z-0 mix-blend-soft-light opacity-50">
+         <div class="w-full h-full absolute top-0 left-0 z-0 mix-blend-soft-light opacity-75">
             <img class="w-full h-full object-cover" src="img/texture-grunge.jpg" alt="texture-grunge" />
          </div>
 
@@ -232,5 +388,411 @@
             <div class="content-[''] bg-[url('../img/separator.png')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
          </div>
       </section>
+
+      <section class="py-20 relative">
+         <!-- Title Event -->
+         <div class="flex justify-between max-w-screen-lg mx-auto">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+
+            <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-20 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-theme">Event</h1>
+
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
+            </svg>
+         </div>
+         <!-- End Title -->
+
+         <div class="relative">
+            <div class="container pt-12 py-20 mx-auto z-[1] relative flex items-center justify-between">
+               <div>
+                  <h1 class="text-5xl tracking-wide font-bold uppercase">Chip Breaker</h1>
+                  <date class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
+                  <div class="flex flex-row mt-12">
+                     <svg class="animate-arrow" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-100" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-300" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-400" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                  </div>
+               </div>
+
+               <div class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
+                  <div class="w-full p-2 relative mb-6 block font-bold uppercase text-theme text-2xl">
+                     <div class="bg-black pt-2">About Event</div>
+                     <svg class="w-full h-auto" viewBox="0 0 150 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.14286H16.2956L18.9671 0L23.1077 8.28571H118.878L121.817 12L126.625 4.14286H130.766L133.704 7.57143H150V0H0V4.14286Z" fill="black" />
+                     </svg>
+                  </div>
+                  <div class="p-6 italic">
+                     <p>"Menjadi Chip Breaker selama periode event akan mendapatkan hadiah langsung."</p>
+
+                     <div class="w-[80%] h-[2px] mx-auto my-5 bg-black content-['']"></div>
+
+                     <p class="uppercase font-bold text-lg">Hadiah</p>
+                     <p class="uppercase font-medium">1 buah Unstable Favor 4-5 type C</p>
+                     <p class="uppercase font-medium">5 buah Caliana necklace</p>
+                  </div>
+               </div>
+            </div>
+
+            <h1 class="text-8xl absolute -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">CHIP BREAKER</h1>
+
+            <div class="absolute w-full h-full top-0 left-0">
+               <img class="w-full h-full object-cover" src="img/bg-event-1.jpg" alt="Background Event 1" />
+            </div>
+         </div>
+
+         <div class="relative my-20">
+            <div class="container pt-12 py-20 mx-auto z-[1] relative flex items-center justify-between">
+               <div class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
+                  <div class="w-full p-2 relative mb-6 block font-bold uppercase text-theme text-2xl">
+                     <div class="bg-black pt-2">About Event</div>
+                     <svg class="w-full h-auto" viewBox="0 0 150 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.14286H16.2956L18.9671 0L23.1077 8.28571H118.878L121.817 12L126.625 4.14286H130.766L133.704 7.57143H150V0H0V4.14286Z" fill="black" />
+                     </svg>
+                  </div>
+                  <div class="p-6 italic">
+                     <p>"Menjadi Chip Breaker selama periode event akan mendapatkan hadiah langsung."</p>
+
+                     <div class="w-[80%] h-[2px] mx-auto my-5 bg-black content-['']"></div>
+
+                     <p class="uppercase font-bold text-lg">Hadiah</p>
+                     <p class="uppercase font-medium">1 buah Unstable Favor 4-5 type C</p>
+                     <p class="uppercase font-medium">5 buah Caliana necklace</p>
+                  </div>
+               </div>
+
+               <div class="flex flex-col items-end">
+                  <h1 class="text-5xl tracking-wide font-bold uppercase">Login Reward</h1>
+                  <date class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
+                  <div class="flex flex-row mt-12 -scale-x-100">
+                     <svg class="animate-arrow" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-100" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-300" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-500" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                  </div>
+               </div>
+            </div>
+
+            <h1 class="text-8xl absolute right-0 -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">LOGIN REWARD</h1>
+
+            <div class="absolute w-full h-full top-0 left-0">
+               <img class="w-full h-full object-cover" src="img/bg-event-2.jpg" alt="Background Event 1" />
+            </div>
+         </div>
+
+         <div class="relative">
+            <div class="container pt-12 py-20 mx-auto z-[1] relative flex items-center justify-between">
+               <div>
+                  <h1 class="text-5xl tracking-wide font-bold uppercase">Monster Attack</h1>
+                  <date class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
+                  <div class="flex flex-row mt-12">
+                     <svg class="animate-arrow" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-100" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-300" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                     <svg class="animate-arrow animation-delay-500" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
+                     </svg>
+                  </div>
+               </div>
+
+               <div class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
+                  <div class="w-full p-2 relative mb-6 block font-bold uppercase text-theme text-2xl">
+                     <div class="bg-black pt-2">About Event</div>
+                     <svg class="w-full h-auto" viewBox="0 0 150 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.14286H16.2956L18.9671 0L23.1077 8.28571H118.878L121.817 12L126.625 4.14286H130.766L133.704 7.57143H150V0H0V4.14286Z" fill="black" />
+                     </svg>
+                  </div>
+                  <div class="p-6 italic">
+                     <p>"Menjadi Chip Breaker selama periode event akan mendapatkan hadiah langsung."</p>
+
+                     <div class="w-[80%] h-[2px] mx-auto my-5 bg-black content-['']"></div>
+
+                     <p class="uppercase font-bold text-lg">Hadiah</p>
+                     <p class="uppercase font-medium">1 buah Unstable Favor 4-5 type C</p>
+                     <p class="uppercase font-medium">5 buah Caliana necklace</p>
+                  </div>
+               </div>
+            </div>
+
+            <h1 class="text-8xl absolute -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">MONSTER ATTACK</h1>
+
+            <div class="absolute w-full h-full top-0 left-0">
+               <img class="w-full h-full object-cover" src="img/bg-event-3.jpg" alt="Background Event 3" />
+            </div>
+         </div>
+
+         <div class="w-full h-full absolute top-0 left-0" id="particles-js"></div>
+      </section>
+
+      <section class="pt-12 pb-[300px] relative">
+         <div class="absolute top-[10%] left-0">
+            <svg width="30" height="120" class="fill-theme" viewBox="0 0 30 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0_4_2)">
+                  <path d="M30 0H0V2.68156H30V0Z" fill="#FFCC29" />
+                  <path d="M30 8.37989H0V11.0615H30V8.37989Z" fill="#FFCC29" />
+                  <path d="M30 16.7598H0V19.4413H30V16.7598Z" fill="#FFCC29" />
+                  <path d="M30 25.1397H0V27.8212H30V25.1397Z" fill="#FFCC29" />
+                  <path d="M30 33.5196H0V36.2011H30V33.5196Z" fill="#FFCC29" />
+                  <path d="M30 41.8994H0V44.581H30V41.8994Z" fill="#FFCC29" />
+                  <path d="M30 50.2793H0V52.9609H30V50.2793Z" fill="#FFCC29" />
+                  <path d="M30 58.6592H0V61.3408H30V58.6592Z" fill="#FFCC29" />
+                  <path d="M30 67.0391H0V69.7207H30V67.0391Z" fill="#FFCC29" />
+                  <path d="M30 75.419H0V78.1006H30V75.419Z" fill="#FFCC29" />
+                  <path d="M30 83.7989H0V86.4804H30V83.7989Z" fill="#FFCC29" />
+                  <path d="M30 92.1788H0V94.8603H30V92.1788Z" fill="#FFCC29" />
+                  <path d="M30 100.559H0V103.24H30V100.559Z" fill="#FFCC29" />
+                  <path d="M30 108.939H0V111.62H30V108.939Z" fill="#FFCC29" />
+                  <path d="M30 117.318H0V120H30V117.318Z" fill="#FFCC29" />
+               </g>
+               <defs>
+                  <clipPath id="clip0_4_2">
+                     <rect width="30" height="120" fill="white" />
+                  </clipPath>
+               </defs>
+            </svg>
+         </div>
+
+         <div class="w-5 h-[40%] object-[''] bg-theme absolute bottom-[10%] right-0"></div>
+         <div class="container mx-auto grid grid-cols-2 relative z-[2]">
+            <div>
+               <h2 class="text-3xl font-semibold flex flex-row items-center mb-12 text-theme">
+                  Link Download
+                  <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
+                  <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
+               </h2>
+
+               <div class="flex flex-col items-start">
+                  <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
+                  <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
+                     <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_20_2)">
+                           <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                           <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                           <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_20_2">
+                              <rect width="74.1237" height="100" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                     Download
+                  </div>
+               </div>
+               <div class="flex flex-col items-start my-8">
+                  <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
+                  <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
+                     <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_20_2)">
+                           <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                           <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                           <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_20_2">
+                              <rect width="74.1237" height="100" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                     Download
+                  </div>
+               </div>
+               <div class="flex flex-col items-start">
+                  <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
+
+                  <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
+                     <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_20_2)">
+                           <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                           <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                           <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_20_2">
+                              <rect width="74.1237" height="100" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                     Download
+                  </div>
+               </div>
+            </div>
+
+            <div class="w-full relative">
+               <div class="shadow-lg max-w-md ml-auto mr-0 relative">
+                  <form class="my-8 p-6">
+                     <div class="uppercase relative text-4xl font-bold bg-theme text-slate-900 pl-4 p-2 mb-8 max-w-[65%]">
+                        Register
+                        <img class="absolute h-full -right-[50px] top-0" src="img/ribbon.png" alt="ribbon" />
+                     </div>
+                     <label class="uppercase mb-2 block" for="">Lyto ID</label>
+                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <label class="uppercase mb-2 block" for="">Password</label>
+                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <label class="uppercase mb-2 block" for="">Confirm Password</label>
+                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <label class="uppercase mb-2 block" for="">Email</label>
+                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <small class="block text-center my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                     <label class="uppercase mb-2 block" for="">Confirm Code</label>
+                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <small class="block text-center my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                  </form>
+                  <div class="relative grid grid-cols-2 gap-4 z-[1] place-items-center px-4 py-[50px]">
+                     <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-white pt-1 pb-2 px-5 mt-2 bg-black clip-reward group hover:bg-white hover:text-black transition-all cursor-pointer hover:shadow-lg">
+                        <svg class="w-auto h-6 mr-3 stroke-white group-hover:stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_20_2)">
+                              <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_20_2">
+                                 <rect width="74.1237" height="100" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        Download
+                     </div>
+                     <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-white pt-1 pb-2 px-5 mt-2 bg-black clip-reward group hover:bg-white hover:text-black transition-all cursor-pointer hover:shadow-lg">
+                        <svg class="w-auto h-6 mr-3 stroke-white group-hover:stroke-black transition-all" viewBox="0 0 90 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_21_6)">
+                              <path class="path animate-dash" d="M1.24713 35.9268L45.9354 2.50885L88.649 35.9268" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M75.6582 25.791V10.0354H65.3695V18.3648" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M8.00232 30.9091V82.9929H83.2448V31.6116" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M33.9838 82.9929V49.3743H58.5104V82.9929" stroke-width="4" stroke-miterlimit="10" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_21_6">
+                                 <rect width="90" height="85" fill="white" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        To Website
+                     </div>
+
+                     <div class="group transition-all cursor-pointer absolute -bottom-[2rem] font-normal flex flex-row items-center justify-center text-xl tracking-wide uppercase pt-3 pb-4 px-10 shadow-inner mt-2 z-[1] text-black hover:scale-95">
+                        <svg class="w-auto h-8 mr-3 stroke-white group-hover:stroke-black transition-all" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_23_11)">
+                              <path class="path animate-dash" d="M71.6368 79.9129V88.0413H2.01794V1.95865H49.3386L70.8296 22.8183V37.2144" stroke="black" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M48.0269 1.95865V22.6224H70.8296" stroke="black" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M17.657 38.8792H55.2915" stroke="black" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M17.657 64.3417H45.1009" stroke="black" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M17.657 50.1414H45.1009" stroke="black" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M65.9865 52.1001V42.9924L86.6704 57.7802L66.9955 72.4701V64.3417H52.6682V52.3939L65.9865 52.1001Z" stroke="black" stroke-width="4" stroke-miterlimit="10" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_23_11">
+                                 <rect width="90" height="90" fill="white" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        Daftar
+
+                        <div class="transition-all w-full h-full content-[''] -z-[1] bg-black clip-reward absolute top-0 p-[1px]">
+                           <div class="transition-all w-full h-full content-[''] bg-white group-hover:bg-theme clip-reward"></div>
+                        </div>
+                     </div>
+
+                     <div class="w-full h-full absolute -z-[1] bg-[url('../img/bg-form.png')] animate-moveregister bg-cover">
+                        <!-- <img class="w-full h-full object-cover" src="img/bg-form.png" alt="background form" /> -->
+                     </div>
+                  </div>
+                  <div class="w-full h-full bg-theme flex p-[1px] clip-register content-[''] absolute top-0 left-0 -z-[1]">
+                     <div class="content-[''] w-full h-full bg-slate-900 clip-register"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="w-full h-full absolute top-0 left-0 z-[1]">
+            <img class="w-full h-full object-cover" src="img/bg-regist.png" alt="background register" />
+         </div>
+      </section>
+      <footer class="w-full p-4 text-center">&copy; Copyright Lyto Games | Design & Develop by STDPHA (Farouq Mulya) - 2023</footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script>
+         var addedClass = ["", "mt-8", "-mt-8", ""];
+         var imgThumb = ["Feature1.png", "Feature2.png", "Feature3.png", "Feature4.png"];
+         var swiper = new Swiper(".feature-content", {
+            slidesPerView: "1",
+            loop: true,
+            autoplay: {
+               delay: 2500,
+            },
+            pagination: {
+               el: ".pagination",
+               clickable: true,
+               bulletClass: "pagination-bullet",
+               bulletActiveClass: "pagination-bullet-active",
+               renderBullet: function (index, className) {
+                  return (
+                     `<div class="aspect-square clip-frame overflow-hidden bg-slate-600 p-[1px] grayscale brightness-50 cursor-pointer transition duration-300 ` +
+                     addedClass[index] +
+                     ` hover:filter-none hover:bg-theme [&.pagination-bullet-active]:filter-none [&.pagination-bullet-active]:bg-theme ` +
+                     className +
+                     `">
+                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/` +
+                     imgThumb[index] +
+                     `" alt="thumbnail feature" />
+                  </div>`
+                  );
+               },
+            },
+         });
+
+         particlesJS.load("particles-hero", "hero-particle.json");
+         particlesJS.load("particles-js", "particlesjs-config.json");
+      </script>
    </body>
 </html>
