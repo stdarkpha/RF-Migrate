@@ -1,45 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth overflow-hidden" lang="en">
+   <!-- <html class="scroll-smooth" lang="en"> -->
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>RF Remastered Migrasi Server</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
+      <!-- META TAG -->
+      <meta name="description" content="RF Remastered adalah Game PC MMORPG legendaris RF Online berlisensi resmi dengan konten terbaru dan lengkap. Keseruan perang 3 bangsa dengan konsep teknologi modern dan futuristik." />
+      <meta
+         name="keywords"
+         content="Rising Force, RF Online, RF Online Official, RF Online Indonesia, RF Remastered, Free2Play, Free To Play, PVP, MMORPG, MMO, RPG, Game Indonesia, Game Online, Game Online Indonesia, Online game, Fantasy MMORPG, Game gratis, Game seru, Action Fantasy, Role-Playing Game, massively multiplayer online roleplaying game, Game PC Indonesia, PC Game, Game legendaris, Game Nostalgia, Game Gratis, video game, Official server, chip war, accretia, bellato, cora, Lyto, Lytogame"
+      />
+      <meta http-equiv="copyright" content="rfonline.lytogame.com" />
+      <meta name="author" content="rfonline.lytogame.com" />
+      <meta http-equiv="imagetoolbar" content="no" />
+      <meta name="revisit-after" content="7" />
+      <meta name="language" content="Indonesia" />
+      <meta name="webcrawlers" content="all" />
+      <meta name="rating" content="general" />
+      <meta name="spiders" content="all" />
+      <meta name="robots" content="all" />
+
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <link rel="stylesheet" href="css/style.css" />
       <!-- <script src="https://cdn.tailwindcss.com"></script> -->
    </head>
-   <body class="bg-black text-white">
-      <nav class="flex items-center justify-center py-4 fixed w-screen bg-black z-10">
+   <body class="bg-black text-white scrollbar-thin scrollbar-thumb-black scrollbar-track-theme">
+      <main class="animate__animated animate__fast fixed w-full h-screen bg-black flex flex-col items-center justify-center z-50">
+         <div class="max-w-md mt-6 text-xs whitespace-pre-line break-words">
+            <div id="mainText">
+               //**************************************************// <br />
+               RISING FORCE ONLINE REMASTERED <br />
+               https;//rfonline.lytogame.com/ <br />
+               loading_ <br />
+               //**************************************************//
+            </div>
+            <div id="assets" class="text-slate-500 leading-loose"></div>
+         </div>
+      </main>
+
+      <nav class="navbar opacity-0 animate__animated flex items-center justify-center py-4 fixed w-screen bg-black z-10">
          <div class="flex flex-row text-sm uppercase font-bold mx-6 cursor-pointer group">
-            <svg class="w-auto h-8 mr-4 transition duration-300 fill-white group-hover:opacity-50 group-hover:scale-90" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-auto h-8 min-[540px]:mr-4 transition duration-300 fill-white group-hover:opacity-50 group-hover:scale-90" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                <path
                   d="M8.9474 11.6179H2.68314C1.20092 11.6179 0 10.4115 0 8.92931V4.92083C0 4.18512 0.454402 3.26008 1.03863 2.80568L3.95438 0.53367C4.83073 -0.147931 6.23181 -0.180388 7.14061 0.457937L10.4837 2.80027C11.1275 3.24927 11.6305 4.21217 11.6305 4.99657V8.93472C11.6305 10.4115 10.4296 11.6179 8.9474 11.6179ZM4.45206 1.172L1.53631 3.44401C1.15223 3.74694 0.811433 4.43396 0.811433 4.92083V8.92931C0.811433 9.96254 1.64991 10.8064 2.68314 10.8064H8.9474C9.98063 10.8064 10.8191 9.96795 10.8191 8.93472V4.99657C10.8191 4.47723 10.4458 3.75776 10.0185 3.46565L6.67539 1.12331C6.0587 0.690548 5.0417 0.712186 4.45206 1.172Z"
                />
                <path d="M5.81526 9.45404C5.59347 9.45404 5.40955 9.27012 5.40955 9.04833V7.42546C5.40955 7.20367 5.59347 7.01974 5.81526 7.01974C6.03705 7.01974 6.22098 7.20367 6.22098 7.42546V9.04833C6.22098 9.27012 6.03705 9.45404 5.81526 9.45404Z" />
             </svg>
 
-            <p class="w-[60px]">
+            <p class="w-[60px] max-[540px]:hidden">
                <span class="block origin-left text-xs font-light m-0 group-hover:font-bold group-hover:scale-125 transition group-hover:text-theme duration-300">Go To</span>
                <span class="group-hover:scale-50 origin-left group-hover:font-light duration-300 transition-all">Website</span>
             </p>
          </div>
          <div class="flex flex-row text-sm uppercase font-bold mx-6 cursor-pointer group">
-            <svg class="w-auto h-8 mr-4 transition duration-500 group-hover:opacity-50 group-hover:scale-90 stroke-white" viewBox="0 0 14 19" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-auto h-8 min-[540px]:mr-4 transition duration-500 group-hover:opacity-50 group-hover:scale-90 stroke-white" viewBox="0 0 14 19" xmlns="http://www.w3.org/2000/svg">
                <path d="M7.10085 8.73627C7.01363 8.72755 6.90897 8.72755 6.81303 8.73627C4.73721 8.6665 3.08878 6.96574 3.08878 4.8725C3.08006 2.73565 4.8157 1 6.95258 1C9.08943 1 10.8251 2.73565 10.8251 4.8725C10.8251 6.96574 9.16793 8.6665 7.10085 8.73627Z" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
                <path d="M12.6306 16.2632H9.14185" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
                <path d="M10.8862 18.0076V14.5189" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
                <path d="M6.95262 18.278C5.36525 18.278 3.78663 17.8768 2.58301 17.0744C0.472329 15.6615 0.472329 13.3589 2.58301 11.9547C4.98152 10.3499 8.91503 10.3499 11.3135 11.9547" stroke-width="1.30828" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
-            <p class="w-[60px]">
+            <p class="w-[60px] max-[540px]:hidden">
                <span class="group-hover:scale-50 origin-left group-hover:font-light duration-300 transition-all">Daftar</span>
                <span class="block origin-left text-xs font-light m-0 group-hover:font-bold group-hover:scale-125 transition group-hover:text-theme duration-300">Baru</span>
             </p>
          </div>
          <div class="flex flex-row text-sm uppercase font-bold mx-6 cursor-pointer group">
-            <svg class="w-auto h-8 mr-4 transition duration-300 fill-white group-hover:opacity-50 group-hover:scale-90" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-auto h-8 min-[540px]:mr-4 transition duration-300 fill-white group-hover:opacity-50 group-hover:scale-90" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg">
                <path d="M4.22749 9.91406C4.1734 9.91406 4.12471 9.90324 4.07062 9.8816C3.91915 9.8221 3.82178 9.67063 3.82178 9.50834V6.26261C3.82178 6.04082 4.0057 5.8569 4.22749 5.8569C4.44929 5.8569 4.63321 6.04082 4.63321 6.26261V8.52921L5.0227 8.13973C5.17958 7.98285 5.43923 7.98285 5.59611 8.13973C5.75299 8.2966 5.75299 8.55626 5.59611 8.71314L4.5142 9.79505C4.43847 9.87078 4.33028 9.91406 4.22749 9.91406Z" />
                <path d="M4.22712 9.91401C4.12434 9.91401 4.02156 9.87614 3.94041 9.795L2.8585 8.71309C2.70163 8.55621 2.70163 8.29655 2.8585 8.13968C3.01538 7.9828 3.27504 7.9828 3.43192 8.13968L4.51383 9.22159C4.6707 9.37846 4.6707 9.63812 4.51383 9.795C4.43268 9.87614 4.3299 9.91401 4.22712 9.91401Z" />
                <path
@@ -48,7 +81,7 @@
                <path d="M11.2598 6.12737H9.09603C7.24596 6.12737 6.52649 5.4079 6.52649 3.55783V1.39401C6.52649 1.23172 6.62386 1.08025 6.77533 1.02075C6.9268 0.955834 7.0999 0.993701 7.21891 1.1073L11.5466 5.43494C11.6602 5.54854 11.698 5.72707 11.6331 5.87853C11.5682 6.03 11.4221 6.12737 11.2598 6.12737ZM7.33792 2.37314V3.55783C7.33792 4.95349 7.70036 5.31593 9.09603 5.31593H10.2807L7.33792 2.37314Z" />
             </svg>
 
-            <p class="w-[60px]">
+            <p class="w-[60px] max-[540px]:hidden">
                <span class="block origin-left text-xs font-light m-0 group-hover:font-bold group-hover:scale-125 transition group-hover:text-theme duration-300">Download</span>
                <span class="group-hover:scale-50 origin-left group-hover:font-light duration-300 transition-all">Installer</span>
             </p>
@@ -57,17 +90,17 @@
 
       <header class="w-100% h-screen min-h-[720px] relative">
          <div class="z-[1] w-full h-full relative mx-auto flex items-center justify-center flex-col">
-            <img class="w-[250px]" src="img/rf-logo.png" alt="rf-logo" />
+            <img class="logo animate__animated opacity-0" width="250" src="img/rf-logo.webp" alt="rf-logo" />
 
-            <h1 class="text-8xl text-center uppercase font-bold text-theme">Migrasi Server</h1>
+            <h1 class="main-title animate__animated opacity-0 text-5xl min-[540px]:text-8xl px-6 mt-3 text-center uppercase font-bold text-theme">Migrasi Server</h1>
 
-            <div class="flex flex-row items-center my-8">
-               <div class="bg-theme text-black py-1 pl-5 pr-[2rem] font-bold text-2xl clip-to">SKYNEX</div>
+            <div class="server animate__animated opacity-0 flex flex-row items-center my-8">
+               <div class="bg-theme text-black py-1 pl-5 pr-[2rem] font-bold text-lg min-[540px]:text-2xl clip-to">SKYNEX</div>
                <span class="mx-4 text-2xl font-bold text-theme">KE</span>
-               <div class="bg-theme text-black py-1 pl-5 pr-[2rem] font-bold text-2xl clip-to">COSMIC</div>
+               <div class="bg-theme text-black py-1 pl-5 pr-[2rem] font-bold text-lg min-[540px]:text-2xl clip-to">COSMIC</div>
             </div>
 
-            <div class="relative p-5 mt-8">
+            <div class="date opacity-0 animate__animated relative p-5 mt-8">
                <div class="w-full h-full absolute animate-scale top-0 left-0">
                   <div class="border-t-8 border-r-8 border-theme w-[25px] aspect-square absolute top-0 right-0"></div>
                   <div class="border-t-8 border-l-8 border-theme w-[25px] aspect-square absolute top-0 left-0"></div>
@@ -80,39 +113,39 @@
             <div class="w-full h-full absolute top-0 left-0 -z-[1]" id="particles-hero"></div>
          </div>
 
-         <div class="absolute bottom-0 left-0 z-[2] w-full flex flex-col items-center group">
-            <div class="bg-theme transition-all group-hover:bg-black group-hover:text-white clip-scroll text-black mx-auto relative flex flex-row px-20 py-2 text-lg font-semibold cursor-pointer">
+         <div class="navigation animate__animated opacity-0 absolute bottom-0 left-0 z-[2] w-full flex flex-col items-center group">
+            <a href="#rule" class="bg-theme transition-all group-hover:bg-black group-hover:text-white clip-scroll text-black mx-auto relative flex flex-row px-12 min-[540px]:px-20 py-2 text-lg font-semibold cursor-pointer">
                <svg class="w-auto h-8 mr-3 stroke-black group-hover:stroke-white transition-all" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="group-hover:animate-dash path" d="M1 7.39098V8.55985C1 11.4675 2.16305 12.6305 5.07069 12.6305H8.55985C11.4675 12.6305 12.6305 11.4675 12.6305 8.55985V5.07069C12.6305 2.16305 11.4675 1 8.55985 1H5.07069C2.16305 1 1 2.16305 1 5.07069" stroke-width="0.87229" stroke-linecap="round" stroke-linejoin="round" />
                   <path class="group-hover:animate-dash path" d="M4.76294 6.02433L6.81573 8.07131L8.86852 6.02433" stroke-width="0.87229" stroke-linecap="round" stroke-linejoin="round" />
                </svg>
 
                Scroll Down
-            </div>
+            </a>
             <div class="w-full h-2 relative bg-theme content-[''] -mt-[1px] flex items-center justify-center">
                <div class="w-0 rounded-full opacity-75 group-hover:opacity-100 group-hover:w-full duration-500 transition-all h-full bg-black content-[]"></div>
             </div>
          </div>
-         <div class="w-full h-full absolute top-0 left-0 z-0">
-            <img class="w-full h-full object-cover" src="img/bg-hero.jpg" alt="background-hero" />
+         <div class="bg-hero animate__animated opacity-0 w-full h-full absolute top-0 left-0 z-0">
+            <img loading="eager" class="w-full h-full object-cover" src="img/bg-hero.webp" alt="background-hero" />
          </div>
       </header>
 
-      <section class="py-20 relative">
-         <div class="container relative text-black mx-auto min-h-[350px] flex flex-col justify-center z-[2]">
-            <h1 class="text-5xl font-bold flex flex-row items-center">
+      <section id="rule" class="py-20 max-[840px]:pb-0 relative overflow-hidden">
+         <div class="container px-6 relative text-black mx-auto min-h-[350px] flex flex-col justify-center z-[2]">
+            <h1 data-aos="fade-right" class="text-3xl min-[540px]:text-5xl font-bold flex flex-row items-center">
                Ketentuan Migrasi
                <div class="w-4 h-10 bg-black relative transform -skew-x-[25deg] content-[''] arrow ml-10"></div>
                <div class="w-4 h-10 bg-black relative transform -skew-x-[25deg] content-[''] arrow ml-5"></div>
             </h1>
-            <ul class="my-5 list-['+'] p-4 mb-20 font-medium text-xl">
-               <li class="px-4">PVP Point dan CPT Point semua karakter direset ke 0</li>
-               <li class="px-4">Karakter hasil merger yang ada di Skynex akan dihapus</li>
-               <li class="px-4">Archon akan mengikuti server Cosmic</li>
-               <li class="px-4">Semua karakter minimal level 50 per tanggal 02 Oktober 2022 pukul 23:59</li>
-               <li class="px-4">
+            <ul class="my-5 list-['+'] p-4 min-[840px]:mb-20 font-medium text-base min-[540px]:text-xl">
+               <li data-aos="fade-up" class="px-4">PVP Point dan CPT Point semua karakter direset ke 0</li>
+               <li data-aos="fade-up" data-aos-delay="100" class="px-4">Karakter hasil merger yang ada di Skynex akan dihapus</li>
+               <li data-aos="fade-up" data-aos-delay="150" class="px-4">Archon akan mengikuti server Cosmic</li>
+               <li data-aos="fade-up" data-aos-delay="200" class="px-4">Semua karakter minimal level 50 per tanggal 02 Oktober 2022 pukul 23:59</li>
+               <li data-aos="fade-up" data-aos-delay="250" class="px-4">
                   WIB akan mendapatkan Potion EXP sesuai kategori
-                  <table class="mt-8">
+                  <table data-aos="zoom-out-up" data-aos-delay="300" class="mt-8 max-[540px]:text-sm">
                      <tr class="border border-black px-4 block py-2">
                         <td>Level 50 – 54</td>
                         <td class="px-4">:</td>
@@ -146,41 +179,38 @@
                   </table>
                </li>
             </ul>
-
-            <!-- Seperator -->
-            <div class="w-full h-1 bg-black relative">
-               <div class="w-40 h-4 bg-black absolute bottom-0 left-0 content-[''] clip-separate"></div>
+            <div data-aos class="w-0 group opacity-0 [&.aos-animate]:opacity-100 [&.aos-animate]:w-full h-1 bg-black max-[840px]:hidden relative">
+               <div class="w-40 h-4 -translate-x-10 group-[.aos-animate]:translate-x-0 duration-500 transition-all opacity-0 group-[.aos-animate]:opacity-100 bg-black absolute bottom-0 left-0 content-[''] clip-separate"></div>
             </div>
          </div>
 
-         <div class="absolute h-[640px] right-0 bottom-0 z-[1]">
-            <img class="w-full h-full object-contain" src="img/chara-rule.png" alt="chara rule" />
+         <div data-aos="fade-left" data-aos-delay="300" class="relative flex justify-end mr-auto ml-0 min-[840px]:absolute h-[640px] min-[840px]:left-[75vw] min-[840px]:bottom-0 z-[1]">
+            <img class="max-w-none h-full" src="img/chara-rule.webp" alt="chara rule" />
          </div>
 
          <div class="w-full h-full absolute top-0 left-0 z-0">
-            <img class="w-full h-full object-cover" src="img/rule-bg.jpg" alt="rule-hero" />
+            <img class="w-full h-full object-cover" src="img/rule-bg.webp" alt="rule-hero" />
          </div>
       </section>
 
       <section class="relative z-[1]">
          <div class="container py-20 mx-auto flex flex-col items-center">
-            <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-20 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-theme">Server Feature</h1>
+            <h1 data-aos="fade-up" class="text-3xl flex justify-center w-fit uppercase font-bold mb-20 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-theme">Server Feature</h1>
 
-            <div class="grid grid-cols-[1fr,2fr] gap-x-[4rem] backdrop-blur-sm backdrop-brightness-50 px-6">
-               <!-- Start Pagination -->
-               <div class="pagination grid grid-cols-2 gap-4"></div>
-               <!-- End Pagination -->
-               <div class="min-w-0">
+            <div class="grid grid-cols-1 min-[840px]:grid-cols-[1fr,2fr] gap-x-[4rem] backdrop-blur-sm backdrop-brightness-50 px-6">
+               <div data-aos-delay="200" data-aos="fade-left" class="pagination max-[840px]:mb-12 max-[840px]:mx-auto max-[840px]:max-w-md grid grid-cols-2 gap-4"></div>
+
+               <div data-aos-delay="200" data-aos="fade-right" class="min-w-0">
                   <div class="swiper feature-content">
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                           <h2 class="text-xl min-[540px]:text-3xl font-bold flex flex-row items-center text-theme">
                               Server Rate2
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
                            </h2>
 
-                           <table class="mt-10 w-full">
+                           <table class="mt-10 w-full max-[540px]:text-sm">
                               <tr class="font-bold">
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
@@ -209,13 +239,13 @@
                            </table>
                         </div>
                         <div class="swiper-slide">
-                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                           <h2 class="text-xl min-[540px]:text-3xl font-bold flex flex-row items-center text-theme">
                               Server Rate
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
                            </h2>
 
-                           <table class="mt-10 w-full">
+                           <table class="mt-10 w-full max-[540px]:text-sm">
                               <tr class="font-bold">
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
@@ -244,13 +274,13 @@
                            </table>
                         </div>
                         <div class="swiper-slide">
-                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                           <h2 class="text-xl min-[540px]:text-3xl font-bold flex flex-row items-center text-theme">
                               Server Rate
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
                            </h2>
 
-                           <table class="mt-10 w-full">
+                           <table class="mt-10 w-full max-[540px]:text-sm">
                               <tr class="font-bold">
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
@@ -279,13 +309,13 @@
                            </table>
                         </div>
                         <div class="swiper-slide">
-                           <h2 class="text-3xl font-bold flex flex-row items-center text-theme">
+                           <h2 class="text-xl min-[540px]:text-3xl font-bold flex flex-row items-center text-theme">
                               Server Rate
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
                               <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
                            </h2>
 
-                           <table class="mt-10 w-full">
+                           <table class="mt-10 w-full max-[540px]:text-sm">
                               <tr class="font-bold">
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-60">RATE</td>
                                  <td class="border border-collapse border-slate-500 px-4 py-2 w-20">Normal</td>
@@ -346,28 +376,36 @@
       <section class="bg-[#f4d800] z-[1] text-black p-20 relative overflow-hidden">
          <div class="absolute left-0 w-full -top-[150px] scale-105 -rotate-3">
             <div class="bg-black -z-10 w-full h-[200px] content-['']"></div>
-            <div class="content-[''] bg-[url('../img/separator.png')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
+            <div class="content-[''] bg-[url('../img/separator.webp')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
          </div>
 
-         <div class="container relative z-[5] mx-auto min-h-[480px] flex items-center justify-end">
-            <div class="flex flex-col items-center">
-               <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-8 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-black">CPT Reward</h1>
-               <p class="my-4">Reset Point CPT tiap akhir bulan dan akan mendapatkan Reward sesuai dengan kategori point CPT</p>
-               <div class="relative px-4 pt-4 pb-12 block z-[1]">
-                  <table>
-                     <tr>
-                        <td class="pr-8">50.000 - 79.999</td>
-                        <td>: 5 set Tier 4</td>
-                     </tr>
-                     <tr>
-                        <td class="pr-8">80.000 - 149.999</td>
-                        <td>: 5 set Tier 4, 10 talic Ignorant dan Favor</td>
-                     </tr>
-                     <tr>
-                        <td class="pr-8">150.000 - ∞</td>
-                        <td>: 10 set Tier 4, 20 talic Ignorant dan Favor, 3 buah Caliana Necklace</td>
-                     </tr>
-                  </table>
+         <div class="container relative z-[5] mx-auto min-h-[480px] flex items-center justify-end overflow-hidden">
+            <div class="flex flex-col items-center min-w-0">
+               <h1 data-aos="fade-up" class="text-3xl flex justify-center text-center w-fit uppercase font-bold mb-8 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-black backdrop-blur-md px-3">CPT Reward</h1>
+               <p data-aos="fade-up" data-aos-delay="100" class="my-4 text-center backdrop-blur-md px-3">Reset Point CPT tiap akhir bulan dan akan mendapatkan Reward sesuai dengan kategori point CPT</p>
+               <div data-aos="zoom-in" data-aos-delay="200" class="relative px-4 pt-4 pb-12 block z-[1] w-full">
+                  <div class="overflow-x-auto">
+                     <table class="min-w-[640px]">
+                        <tr>
+                           <td class="pr-8">50.000 - 79.999</td>
+                           <td>:</td>
+                           <td>5 set Tier 4</td>
+                        </tr>
+                        <tr>
+                           <td class="pr-8">80.000 - 149.999</td>
+                           <td>:</td>
+                           <td>5 set Tier 4, 10 talic Ignorant dan Favor</td>
+                        </tr>
+                        <tr>
+                           <td class="pr-8">150.000 - ∞</td>
+                           <td>:</td>
+                           <td>
+                              10 set Tier 4, 20 talic Ignorant dan Favor, <br />
+                              3 buah Caliana Necklace
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
                   <div class="clip-reward overflow-hidden bg-black p-[1px] w-full h-full absolute top-0 left-0 -z-[1]">
                      <div class="clip-reward overflow-hidden bg-yellow-400 w-full h-full"></div>
                   </div>
@@ -375,27 +413,26 @@
             </div>
          </div>
 
-         <div class="absolute h-[640px] left-0 bottom-0 z-[1] animate-floating">
-            <img class="w-full h-full object-contain animate-shadow" src="img/chara-reward.png" alt="chara Reward" />
+         <div data-aos="fade-up" class="relative right-[100px] mr-0 min-[840px]:absolute h-[640px] md:left-0 bottom-0 z-[1] animate-floating">
+            <img loading="lazy" class="h-full object-contain animate-shadow max-w-none" src="img/chara-reward.webp" alt="chara Reward" />
          </div>
 
          <div class="w-full h-full absolute top-0 left-0 z-0 mix-blend-soft-light opacity-75">
-            <img class="w-full h-full object-cover" src="img/texture-grunge.jpg" alt="texture-grunge" />
+            <img loading="lazy" class="w-full h-full object-cover" src="img/texture-grunge.webp" alt="texture-grunge" />
          </div>
 
          <div class="absolute left-0 w-full -bottom-[150px] scale-x-105 rotate-[183deg] z-[2]">
             <div class="bg-black -z-10 w-full h-[200px] content-['']"></div>
-            <div class="content-[''] bg-[url('../img/separator.png')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
+            <div class="content-[''] bg-[url('../img/separator.webp')] animate-cross -mt-2 w-full h-14 bg-contain left-0 flex items-center justify-center z-10"></div>
          </div>
       </section>
 
-      <section class="py-20 relative">
-         <!-- Title Event -->
-         <div class="flex justify-between max-w-screen-lg mx-auto">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="py-20 relative w-full overflow-hidden">
+         <div data-aos="zoom-out-up" class="flex justify-between max-w-screen-lg mx-auto px-6">
+            <svg class="max-[840px]:hidden" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
             </svg>
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="max-[640px]:hidden" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
             </svg>
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -410,10 +447,10 @@
 
             <h1 class="text-3xl flex justify-center w-fit uppercase font-bold mb-20 relative before:content-[''] before:w-[40%] before:absolute before:-bottom-4 before:h-[1px] before:bg-theme">Event</h1>
 
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="max-[840px]:hidden" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
             </svg>
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="max-[640px]:hidden" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
             </svg>
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,13 +463,12 @@
                <path d="M51 30.5918H30.75V51H21.25V30.5918H1V21.4082H21.25V1H30.5V21.4082H51V30.5918Z" stroke="#F8F501" />
             </svg>
          </div>
-         <!-- End Title -->
 
          <div class="relative">
-            <div class="container pt-12 py-20 mx-auto z-[1] relative flex items-center justify-between">
-               <div>
-                  <h1 class="text-5xl tracking-wide font-bold uppercase">Chip Breaker</h1>
-                  <date class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
+            <div class="container pt-12 px-6 py-20 mx-auto z-[1] relative flex max-[840px]:flex-col items-center justify-between">
+               <div class="max-[840px]:mb-12">
+                  <h1 data-aos="fade-left" class="text-5xl tracking-wide font-bold uppercase">Chip Breaker</h1>
+                  <date data-aos="fade-up" data-aos-delay="200" class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
                   <div class="flex flex-row mt-12">
                      <svg class="animate-arrow" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
@@ -449,7 +485,7 @@
                   </div>
                </div>
 
-               <div class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
+               <div data-aos="zoom-out" class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
                   <div class="w-full p-2 relative mb-6 block font-bold uppercase text-theme text-2xl">
                      <div class="bg-black pt-2">About Event</div>
                      <svg class="w-full h-auto" viewBox="0 0 150 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -468,16 +504,16 @@
                </div>
             </div>
 
-            <h1 class="text-8xl absolute -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">CHIP BREAKER</h1>
+            <h1 data-aos="fade-left" class="text-8xl absolute w-screen overflow-hidden whitespace-nowrap -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">CHIP BREAKER</h1>
 
-            <div class="absolute w-full h-full top-0 left-0">
-               <img class="w-full h-full object-cover" src="img/bg-event-1.jpg" alt="Background Event 1" />
+            <div data-aos="fade" class="absolute w-full h-full top-0 left-0">
+               <img loading="lazy" class="w-full h-full object-cover" src="img/bg-event-1.webp" alt="Background Event 1" />
             </div>
          </div>
 
          <div class="relative my-20">
-            <div class="container pt-12 py-20 mx-auto z-[1] relative flex items-center justify-between">
-               <div class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
+            <div class="container px-6 pt-12 py-20 mx-auto z-[1] relative flex max-[840px]:flex-col items-center justify-between">
+               <div data-aos="zoom-out" class="clip-frame max-[840px]:order-2 pb-12 bg-theme text-black text-center max-w-sm">
                   <div class="w-full p-2 relative mb-6 block font-bold uppercase text-theme text-2xl">
                      <div class="bg-black pt-2">About Event</div>
                      <svg class="w-full h-auto" viewBox="0 0 150 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -495,9 +531,9 @@
                   </div>
                </div>
 
-               <div class="flex flex-col items-end">
-                  <h1 class="text-5xl tracking-wide font-bold uppercase">Login Reward</h1>
-                  <date class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
+               <div class="flex flex-col items-end max-[840px]:mb-12">
+                  <h1 data-aos="fade-right" class="text-5xl tracking-wide font-bold uppercase">Login Reward</h1>
+                  <date data-aos="fade-up" data-aos-delay="200" class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
                   <div class="flex flex-row mt-12 -scale-x-100">
                      <svg class="animate-arrow" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
@@ -515,18 +551,18 @@
                </div>
             </div>
 
-            <h1 class="text-8xl absolute right-0 -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">LOGIN REWARD</h1>
+            <h1 data-aos="fade-right" class="text-8xl text-right absolute right-0 w-screen overflow-hidden whitespace-nowrap -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">LOGIN REWARD</h1>
 
-            <div class="absolute w-full h-full top-0 left-0">
-               <img class="w-full h-full object-cover" src="img/bg-event-2.jpg" alt="Background Event 1" />
+            <div data-aos="fade" class="absolute w-full h-full top-0 left-0">
+               <img loading="lazy" class="w-full h-full object-cover" src="img/bg-event-2.webp" alt="Background Event 1" />
             </div>
          </div>
 
          <div class="relative">
-            <div class="container pt-12 py-20 mx-auto z-[1] relative flex items-center justify-between">
-               <div>
-                  <h1 class="text-5xl tracking-wide font-bold uppercase">Monster Attack</h1>
-                  <date class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
+            <div class="container px-6 pt-12 py-20 mx-auto z-[1] relative flex max-[840px]:flex-col items-center justify-between">
+               <div class="max-[840px]:mb-12">
+                  <h1 data-aos="fade-left" class="text-5xl tracking-wide font-bold uppercase">Monster Attack</h1>
+                  <date data-aos="fade-up" data-aos-delay="200" class="font-bold text-lg tracking-wide uppercase inline-block text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward">05 October - 16 October</date>
                   <div class="flex flex-row mt-12">
                      <svg class="animate-arrow" width="30" height="45" viewBox="0 0 30 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H16.2712L30 22.5801L16.2712 45H0L13.7288 22.4199L0 0Z" fill="#F3D80D" />
@@ -543,7 +579,7 @@
                   </div>
                </div>
 
-               <div class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
+               <div data-aos="zoom-out" class="clip-frame pb-12 bg-theme text-black text-center max-w-sm">
                   <div class="w-full p-2 relative mb-6 block font-bold uppercase text-theme text-2xl">
                      <div class="bg-black pt-2">About Event</div>
                      <svg class="w-full h-auto" viewBox="0 0 150 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -562,10 +598,10 @@
                </div>
             </div>
 
-            <h1 class="text-8xl absolute -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">MONSTER ATTACK</h1>
+            <h1 data-aos="fade-left" class="text-8xl absolute w-screen overflow-hidden whitespace-nowrap -bottom-[2.5rem] z-[1] font-bold text-transparent stroke-text">MONSTER ATTACK</h1>
 
-            <div class="absolute w-full h-full top-0 left-0">
-               <img class="w-full h-full object-cover" src="img/bg-event-3.jpg" alt="Background Event 3" />
+            <div data-aos="fade" class="absolute w-full h-full top-0 left-0">
+               <img loading="lazy" class="w-full h-full object-cover" src="img/bg-event-3.webp" alt="Background Event 3" />
             </div>
          </div>
 
@@ -573,7 +609,7 @@
       </section>
 
       <section class="pt-12 pb-[300px] relative">
-         <div class="absolute top-[10%] left-0">
+         <div data-aos="fade-down" class="absolute top-[10%] left-0">
             <svg width="30" height="120" class="fill-theme" viewBox="0 0 30 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g clip-path="url(#clip0_4_2)">
                   <path d="M30 0H0V2.68156H30V0Z" fill="#FFCC29" />
@@ -600,93 +636,96 @@
             </svg>
          </div>
 
-         <div class="w-5 h-[40%] object-[''] bg-theme absolute bottom-[10%] right-0"></div>
-         <div class="container mx-auto grid grid-cols-2 relative z-[2]">
-            <div>
-               <h2 class="text-3xl font-semibold flex flex-row items-center mb-12 text-theme">
+         <div data-aos="fade-up" class="w-5 h-[40%] object-[''] bg-theme absolute bottom-[10%] right-0"></div>
+
+         <div class="container mx-auto px-6 grid grid-cols-1 min-[840px]:grid-cols-2 relative z-[2]">
+            <div class="">
+               <h2 data-aos="fade-up" class="text-3xl font-semibold flex flex-row items-center mb-12 text-theme">
                   Link Download
                   <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-10"></div>
                   <div class="w-4 h-10 bg-theme relative transform -skew-x-[25deg] content-[''] ml-5"></div>
                </h2>
 
-               <div class="flex flex-col items-start">
-                  <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
-                  <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
-                     <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_20_2)">
-                           <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
-                           <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
-                           <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
-                        </g>
-                        <defs>
-                           <clipPath id="clip0_20_2">
-                              <rect width="74.1237" height="100" />
-                           </clipPath>
-                        </defs>
-                     </svg>
-                     Download
+               <div class="max-[840px]:flex max-[840px]:flex-row max-[840px]:items-center max-[840px]:justify-center max-[840px]:flex-wrap">
+                  <div data-aos="fade-left" data-aos-delay="100" class="flex flex-col items-center min-[640px]:items-start">
+                     <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
+                     <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
+                        <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_20_2)">
+                              <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_20_2">
+                                 <rect width="74.1237" height="100" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        Download
+                     </div>
                   </div>
-               </div>
-               <div class="flex flex-col items-start my-8">
-                  <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
-                  <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
-                     <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_20_2)">
-                           <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
-                           <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
-                           <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
-                        </g>
-                        <defs>
-                           <clipPath id="clip0_20_2">
-                              <rect width="74.1237" height="100" />
-                           </clipPath>
-                        </defs>
-                     </svg>
-                     Download
+                  <div data-aos="fade-left" data-aos-delay="200" class="flex flex-col items-center min-[640px]:items-start max-[840px]:mx-3 my-8">
+                     <p class="text-lg font-semibold uppercase tracking-wide">Mirror Client Installer</p>
+                     <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
+                        <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_20_2)">
+                              <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_20_2">
+                                 <rect width="74.1237" height="100" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        Download
+                     </div>
                   </div>
-               </div>
-               <div class="flex flex-col items-start">
-                  <p class="text-lg font-semibold uppercase tracking-wide">Full Client Installer</p>
+                  <div data-aos="fade-left" data-aos-delay="300" class="flex flex-col items-center min-[640px]:items-start">
+                     <p class="text-lg font-semibold uppercase tracking-wide">Partial Client Installer</p>
 
-                  <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
-                     <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_20_2)">
-                           <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
-                           <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
-                           <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
-                        </g>
-                        <defs>
-                           <clipPath id="clip0_20_2">
-                              <rect width="74.1237" height="100" />
-                           </clipPath>
-                        </defs>
-                     </svg>
-                     Download
+                     <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-black pt-1 pb-2 px-5 mt-2 bg-white clip-reward cursor-pointer transition-all hover:bg-theme hover:scale-95 group">
+                        <svg class="w-auto h-6 mr-3 stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_20_2)">
+                              <path class="path animate-dash" d="M51.6495 32.1649H72.0618V97.9381H2.06183V32.1649H21.6495" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M37.0103 0V69.0722" stroke-width="4" stroke-miterlimit="10" />
+                              <path class="path animate-dash" d="M54.1237 51.5464L37.0103 69.0722L19.2783 52.0619" stroke-width="4" stroke-miterlimit="10" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_20_2">
+                                 <rect width="74.1237" height="100" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        Download
+                     </div>
                   </div>
                </div>
             </div>
 
-            <div class="w-full relative">
-               <div class="shadow-lg max-w-md ml-auto mr-0 relative">
+            <div data-aos="fade-up" class="w-full relative">
+               <div class="shadow-lg max-w-md mx-auto lg:ml-auto lg:mr-0 relative">
                   <form class="my-8 p-6">
                      <div class="uppercase relative text-4xl font-bold bg-theme text-slate-900 pl-4 p-2 mb-8 max-w-[65%]">
                         Register
-                        <img class="absolute h-full -right-[50px] top-0" src="img/ribbon.png" alt="ribbon" />
+                        <img loading="lazy" class="absolute h-full -right-[50px] top-0" src="img/ribbon.webp" alt="ribbon" />
                      </div>
-                     <label class="uppercase mb-2 block" for="">Lyto ID</label>
-                     <input class="w-full px-2 py-1 mb-4" type="text" />
-                     <label class="uppercase mb-2 block" for="">Password</label>
-                     <input class="w-full px-2 py-1 mb-4" type="text" />
-                     <label class="uppercase mb-2 block" for="">Confirm Password</label>
-                     <input class="w-full px-2 py-1 mb-4" type="text" />
-                     <label class="uppercase mb-2 block" for="">Email</label>
-                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <label class="uppercase mb-2 block" for="id">Lyto ID</label>
+                     <input id="id" class="w-full px-2 py-1 mb-4" type="text" />
+                     <label class="uppercase mb-2 block" for="pass">Password</label>
+                     <input class="w-full px-2 py-1 mb-4" id="pass" type="text" />
+                     <label class="uppercase mb-2 block" for="cpass">Confirm Password</label>
+                     <input class="w-full px-2 py-1 mb-4" id="cpass" type="text" />
+                     <label class="uppercase mb-2 block" for="mail">Email</label>
+                     <input class="w-full px-2 py-1 mb-4" id="mail" type="text" />
                      <small class="block text-center my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
-                     <label class="uppercase mb-2 block" for="">Confirm Code</label>
-                     <input class="w-full px-2 py-1 mb-4" type="text" />
+                     <label class="uppercase mb-2 block" for="code">Confirm Code</label>
+                     <input class="w-full px-2 py-1 mb-4" id="code" type="text" />
                      <small class="block text-center my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
                   </form>
-                  <div class="relative grid grid-cols-2 gap-4 z-[1] place-items-center px-4 py-[50px]">
+                  <div class="relative grid grid-cols-1 min-[480px]:grid-cols-2 gap-4 z-[1] place-items-center px-4 py-[50px]">
                      <div class="font-light flex flex-row items-center justify-center text-lg tracking-wide uppercase text-white pt-1 pb-2 px-5 mt-2 bg-black clip-reward group hover:bg-white hover:text-black transition-all cursor-pointer hover:shadow-lg">
                         <svg class="w-auto h-6 mr-3 stroke-white group-hover:stroke-black transition-all" fill="none" viewBox="0 0 75 100" xmlns="http://www.w3.org/2000/svg">
                            <g clip-path="url(#clip0_20_2)">
@@ -742,9 +781,7 @@
                         </div>
                      </div>
 
-                     <div class="w-full h-full absolute -z-[1] bg-[url('../img/bg-form.png')] animate-moveregister bg-cover">
-                        <!-- <img class="w-full h-full object-cover" src="img/bg-form.png" alt="background form" /> -->
-                     </div>
+                     <div class="w-full h-full absolute -z-[1] bg-[url('../img/bg-form.webp')] animate-moveregister bg-cover"></div>
                   </div>
                   <div class="w-full h-full bg-theme flex p-[1px] clip-register content-[''] absolute top-0 left-0 -z-[1]">
                      <div class="content-[''] w-full h-full bg-slate-900 clip-register"></div>
@@ -753,17 +790,94 @@
             </div>
          </div>
          <div class="w-full h-full absolute top-0 left-0 z-[1]">
-            <img class="w-full h-full object-cover" src="img/bg-regist.png" alt="background register" />
+            <img loading="lazy" class="w-full h-full object-cover" src="img/bg-regist.webp" alt="background register" />
          </div>
       </section>
-      <footer class="w-full p-4 text-center">&copy; Copyright Lyto Games | Design & Develop by STDPHA (Farouq Mulya) - 2023</footer>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+      <footer class="w-full p-4 text-center">&copy; Copyright Lyto Games | Design & Develop by STDPHA (Farouq Mulya) - 2023</footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
       <script>
+         AOS.init();
+         function getElement(selector) {
+            return document.querySelector(selector);
+         }
+
+         function hero() {
+            getElement("nav").classList.add("animate__fadeInDown");
+            getElement(".navigation").classList.add("animate__fadeInUp");
+            getElement(".bg-hero").classList.add("animate__fadeIn");
+
+            getElement(".logo").classList.add("animate__fadeInUp");
+            getElement(".main-title").classList.add("animate__fadeInUp");
+            getElement(".server").classList.add("animate__fadeInUp");
+            getElement(".date").classList.add("animate__zoomIn");
+            getElement(".date").classList.remove("opacity-0");
+         }
+
+         function removePreload() {
+            getElement("main").classList.add("animate__fadeOut");
+            getElement("html").classList.remove("overflow-hidden");
+            setTimeout(function () {
+               getElement("main").classList.add("hidden");
+               hero();
+            }, 300);
+         }
+
+         var assetList = [];
+
+         function collectAssets() {
+            document.querySelectorAll("img, script, link").forEach(function (element) {
+               if (element.src || element.href) {
+                  assetList.push(element.src || element.href);
+               }
+            });
+
+            var count = 0;
+
+            assetList.forEach(function (asset, index) {
+               setTimeout(function () {
+                  var loc = document.getElementById("assets");
+                  loc.innerHTML += asset + "<br>";
+
+                  count++;
+
+                  if (count == assetList.length) {
+                     removePreload();
+                  }
+               }, index * 20);
+            });
+         }
+
+         function animateText(elementId, delay, callback) {
+            var element = document.getElementById(elementId);
+            var text = element.textContent;
+            var i = 0;
+            element.textContent = "";
+
+            function typeWriter() {
+               if (i < text.length) {
+                  element.textContent += text.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, delay);
+               } else {
+                  callback();
+               }
+            }
+
+            typeWriter();
+         }
+
+         function CallAfter() {
+            collectAssets();
+         }
+
+         animateText("mainText", 10, CallAfter);
+
          var addedClass = ["", "mt-8", "-mt-8", ""];
-         var imgThumb = ["Feature1.png", "Feature2.png", "Feature3.png", "Feature4.png"];
+         var imgThumb = ["Feature1.webp", "Feature2.webp", "Feature3.webp", "Feature4.webp"];
          var swiper = new Swiper(".feature-content", {
             slidesPerView: "1",
             loop: true,
@@ -782,7 +896,7 @@
                      ` hover:filter-none hover:bg-theme [&.pagination-bullet-active]:filter-none [&.pagination-bullet-active]:bg-theme ` +
                      className +
                      `">
-                     <img class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/` +
+                     <img loading="lazy" class="flex clip-frame w-full h-full object-cover relative z-[1]" src="img/` +
                      imgThumb[index] +
                      `" alt="thumbnail feature" />
                   </div>`
